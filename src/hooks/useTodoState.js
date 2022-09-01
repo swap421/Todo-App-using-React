@@ -19,9 +19,9 @@ export default initialTodos=>{
             setTodos(updatedTodos);
         },
         editTodo:(todoId,newTask)=>{
-            console.log('call');
             const updatedTodos=todos.map(todo=>
-                todo.id===todoId ? {...todo, task:newTask} : todo)
+            todo.id===todoId ? {...todo, task:newTask} : todo);
+            setTodos(updatedTodos);
         }
     }
 }
